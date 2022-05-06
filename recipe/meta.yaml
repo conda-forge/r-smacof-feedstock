@@ -1,4 +1,4 @@
-{% set version = "2.1-3" %}
+{% set version = "2.1-5" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,7 +11,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/smacof_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/smacof/smacof_{{ version }}.tar.gz
-  sha256: 019ed840e051c5a016d8cd91ba2bc9a7133730a44e38c12e03f2903e17984188
+  sha256: fb0369a94bbdcb2b024d11731f2dda1a783b535aa243a00dd783a47a86192ac5
 
 build:
   merge_build_host: true  # [win]
